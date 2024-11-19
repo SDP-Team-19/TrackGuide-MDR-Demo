@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Install Dependencies",
+            "type": "shell",
+            "command": "poetry install",
+            "problemMatcher": []
+        },
+        {
+            "label": "Create and Activate Venv",
+            "type": "shell",
+            "command": "python3.11 -m venv .venv && source ./.venv/bin/activate",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build",
+            "type": "shell",
+            "dependsOn": [
+                "Install Dependencies",
+                "Create and Activate Venv"
+            ],
+            "command": "echo Build task running...",
+            "problemMatcher": []
+        }
+    ]
+}
