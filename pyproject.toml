@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "trackguide-mdr-demo"
+version = "0.1.0"
+description = "This repository houses all the code for the TrackGuide MDR demo. This includes Google Maps reporting and NMEA consumption from serial."
+authors = ["Mitchell <msylvia@umass.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
