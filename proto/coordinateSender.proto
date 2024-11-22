@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package coordinateSender;
+
+// Define the message types
+message LocationRequest {
+  string latitude = 1;
+  string longitude = 2;
+}
+
+message LocationResponse {
+  string reply = 1;
+}
+
+// Define the service
+service coordinateSenderService {
+  rpc SendLocation(LocationRequest) returns (LocationResponse);
+}
